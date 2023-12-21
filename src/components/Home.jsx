@@ -1,0 +1,23 @@
+import React from 'react'
+import suda from '../components/assets/DSC_98282.jpg'
+
+const Home = () => {
+  return (
+    <>
+      <div className="Home">
+          <div className="Home-info">
+            <p>Hello</p>
+            <h1>I'm Sudarshan</h1>
+            <h4>freelancer front-end & <br />Graphic designer</h4>
+            <button>Hire me</button>
+          </div>
+
+          <div className="Home-img">
+            <img src={suda} alt="" />
+          </div>
+      </div>
+    </>
+  )
+}
+
+export default Home
