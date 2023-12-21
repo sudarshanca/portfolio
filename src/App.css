@@ -30,6 +30,7 @@ header {
   text-decoration: none;
   margin: 5px;
   color: black;
+  cursor: pointer;
   
 }
 /* header section ends */
@@ -97,14 +98,6 @@ header {
   background-position: center;
 }
 
-@media (max-width:400px) {
-  .Home {
-    flex-direction: column;
-  }
-  .Home-info {
-    margin-bottom: 3rem;
-  }
-}
 
 /* home section ends */
 
@@ -117,7 +110,8 @@ header {
   text-align: center;
 }
 
-.About h1 {
+.About h1,
+.Service h1 {
   width: fit-content;
   margin: 20px auto;
   font-weight: 300;
@@ -160,8 +154,50 @@ header {
 
 
 
-/* About section  starts */
+/* Service section  ends */
+
+.Service {
+  width: 80vw;
+  margin: 5rem auto;
+  text-align: center;
+}
+.Service p {
+  margin: 1rem auto ;
+  max-width: 400px;
+}
+
+.Service-skills{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 0.5rem;
+  justify-content: center;
+  margin: 3rem auto;
+}
+.Service-list{
+  max-width: 300px;
+  padding: 10px;
+  box-shadow: 1px 1px 15px rgb(0, 0, 0, 0.1) ;
+}
+.Service-list h2 {
+  font-weight: 300;
+  margin: 10px ;
+}
+.Service-list p {
+  font-weight: 300;
+}
 
 
+/* Service section  ends */
 
+@media (max-width:450px) {
+  .Home {
+    flex-direction: column;
+  }
+  .Home-info {
+    margin-bottom: 3rem;
+  }
 
+  .Service-skills {
+    grid-template-columns: auto;
+  }
+}

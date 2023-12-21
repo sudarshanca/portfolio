@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
 
 const Header = () => {
   return (
@@ -9,10 +10,10 @@ const Header = () => {
          </div>
           <div className="Header-list">
             <ul >
-              <a href="Home">Home</a>
-              <a href="About">About me</a>
-              <a href="Service">Service</a>
-              <a href="Projects">Projects</a>
+              <Link activeClass="active" to="Home" spy={true} smooth={true} offset={50} duration={500} >Home</Link>
+              <Link activeClass="active" to="About" spy={true} smooth={true} offset={-40} duration={500}>About me</Link>
+              <Link activeClass="active" to="Service" spy={true} smooth={true} offset={-50} duration={500}>Service</Link>
+              <Link activeClass="active" to="Projects" spy={true} smooth={true} offset={50} duration={500}>Projects</Link>
             </ul>
           </div>
       </header>
