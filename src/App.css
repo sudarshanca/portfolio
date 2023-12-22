@@ -22,7 +22,8 @@ header {
 }
 
 .Header-icon {
-  color: yellow;
+  color: #fd0;
+  font-style: italic;
   font-size: 1.5rem;
 }
 
@@ -31,8 +32,9 @@ header {
   margin: 5px;
   color: black;
   cursor: pointer;
-  
+
 }
+
 /* header section ends */
 
 /* home section starts */
@@ -188,6 +190,65 @@ header {
 
 
 /* Service section  ends */
+
+/* Footer section  starts */
+
+footer{
+  width: 80%;
+ 
+  margin: 0 auto;
+}
+
+footer .Footer-content {
+  text-align: center;
+  background-color: rgb(251, 226, 65);
+  
+}
+
+.Footer-content h2 {
+  font-weight: 300;
+  padding: 1rem 0 0 0;
+}
+
+
+footer .Footer-button {
+  cursor: pointer;
+  color: black;
+  background-color: white;
+  box-shadow: 1px 1px 10px #00000042;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 4px 1rem;
+  display: inline-block;
+  min-height: 28px;
+  transition: background-color .24s,box-shadow .24s;
+  margin: 1rem ;
+}
+
+footer .Footer-button:hover {
+    box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 12%) 0px 1px 1px 0px, #fd0 0px 0px 0px 1px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(60 66 87 / 8%) 0px 3px 9px 0px, rgb(60 66 87 / 8%) 0px 2px 5px 0px;
+}
+
+footer .icons {
+  height: 3rem;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+footer .icons div p {
+  font-weight: 200;
+  font-size: .7rem;
+}
+
+
+/* Footer section  ends */
 
 @media (max-width:450px) {
   .Home {
