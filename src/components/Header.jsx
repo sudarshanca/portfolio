@@ -10,10 +10,9 @@ const Header = () => {
          </div>
           <div className="Header-list" id="mainNav" >
             <ul >
-              <Link activeClass="active" to="Home" spy={true} smooth={true} offset={50} duration={500} >Home</Link>
-              <Link activeClass="active" to="About" spy={true} smooth={true} offset={-40} duration={500}>About me</Link>
-              <Link activeClass="active" to="Service" spy={true} smooth={true} offset={-50} duration={500}>Service</Link>
-              <Link activeClass="active" to="Projects" spy={true} smooth={true} offset={50} duration={500}>Projects</Link>
+              <Link  activeClass="active" to="Home" spy={true} smooth={true} offset={-50} duration={500} >Home</Link>
+              <Link  activeClass="active" to="About" spy={true} smooth={true} offset={-40} duration={500}>About me</Link>
+              <Link  activeClass="active" to="Skills" spy={true} smooth={true} offset={-30} duration={500}>Skills</Link>
             </ul>
           </div>
            

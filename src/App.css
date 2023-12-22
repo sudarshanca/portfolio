@@ -6,15 +6,21 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
   font-family: 'Roboto', sans-serif;
 }
+
 
 /* header section */
 
 header {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
+  padding: 0 10vw;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -156,46 +162,56 @@ header {
 
 
 
-/* Service section  ends */
+/* Skills section  ends */
 
-.Service {
+.Skills {
   width: 80vw;
   margin: 5rem auto;
   text-align: center;
 }
-.Service p {
+.Skills p {
   margin: 1rem auto ;
   max-width: 400px;
 }
 
-.Service-skills{
+.Skills-skills{
   display: grid;
   grid-template-columns: auto auto;
   gap: 0.5rem;
   justify-content: center;
   margin: 3rem auto;
 }
-.Service-list{
+.Skills-list{
   max-width: 300px;
   padding: 10px;
   box-shadow: 1px 1px 15px rgb(0, 0, 0, 0.1) ;
 }
-.Service-list h2 {
+.Skills-list h2 {
   font-weight: 300;
   margin: 10px ;
 }
-.Service-list p {
-  font-weight: 300;
+
+.skill-icon {
+  display: flex;
+  align-items: center;
+  scale: 1;
+  transition-duration: 500ms;
+}
+.skill-icon:hover{
+  scale: 1.1;
 }
 
+.icon {
+  font-size: 2rem;
+  color: #000;
+}
 
-/* Service section  ends */
+/* Skills section  ends */
 
 /* Footer section  starts */
 
 footer{
   width: 80%;
- 
   margin: 0 auto;
 }
 
@@ -241,12 +257,15 @@ footer .icons {
   gap: 1rem;
   text-align: center;
 }
+
+footer .icons div a {
+  color: #000;
+}
+
 footer .icons div p {
   font-weight: 200;
   font-size: .7rem;
 }
-
-
 /* Footer section  ends */
 
 @media (max-width:450px) {
@@ -268,6 +287,5 @@ footer .icons div p {
   footer{
     width: 100%;
     margin: 0 auto;
-    padding:  0 .5rem ;
   }
 }
