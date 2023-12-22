@@ -260,4 +260,8 @@ footer .icons div p {
   .Service-skills {
     grid-template-columns: auto;
   }
+
+  .Footer-content h2 {
+    font-size: 1rem;
+  }
 }
