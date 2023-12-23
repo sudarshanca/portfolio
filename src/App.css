@@ -182,7 +182,7 @@ header {
   display: grid;
   grid-template-columns: auto auto;
   gap: 0.5rem;
-  justify-content: center;
+  justify-content: center; 
   margin: 3rem auto;
 }
 .Skills-list{
