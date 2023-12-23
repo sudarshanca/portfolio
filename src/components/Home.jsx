@@ -9,7 +9,7 @@ const Home = () => {
             <p>Hello</p>
             <h1>I'm Sudarshan</h1>
             <h4>freelancer front-end & <br />Graphic designer</h4>
-            <button>Hire me</button>
+            <a href="mailto:sudarshanreddyca@gmail.com"> Hire me</a>
           </div>
 
           <div className="Home-img">

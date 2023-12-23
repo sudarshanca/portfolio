@@ -9,6 +9,11 @@
   font-family: 'Roboto', sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: #000;
+}
+
 
 /* header section */
 
@@ -72,12 +77,11 @@ header {
   line-height: 1.5rem;
   font-weight: 400;
 }
-.Home-info button {
-  display: inline-block;
+.Home-info a {
   outline: 0;
   border: none;
   cursor: pointer;
-  padding: 0 16px;
+  padding: .3rem 1rem;
   border-radius: 50px;
   min-width: 100px;
   height: 30px;
@@ -184,7 +188,7 @@ header {
 .Skills-list{
   max-width: 300px;
   padding: 10px;
-  box-shadow: 1px 1px 15px rgb(0, 0, 0, 0.1) ;
+  box-shadow: 5px 5px 15px rgb(0, 0, 0, 0.1) ;
 }
 .Skills-list h2 {
   font-weight: 300;
