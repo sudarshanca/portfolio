@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
+import { Link } from 'react-scroll';
 
 const Header = () => {
   return (

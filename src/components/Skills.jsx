@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaHtml5, FaCss3Alt, FaReact, FaBootstrap, FaFigma } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaReact, FaFigma } from "react-icons/fa";
 import { DiJavascript, DiPhotoshop, DiIllustrator } from "react-icons/di";
 
 const Skills = () => {
@@ -8,8 +8,12 @@ const Skills = () => {
     <>
       <div className="Skills">
         <h1>My Skills</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est mollitia in, eius quasi aliquid distinctio qui. At saepe dicta sunt?!</p>
-
+        <p>I'm a front-end developer with a focus on HTML5, CSS3, JavaScript, React and TypeScript.
+        <br /><br />
+        I specialize in building websites that are pixel perfect and well-designed using processes and code that is clean, semantic and easy to maintain.
+        <br /><br />
+        Some of my other preferred tools and frameworks are Figma, Bootstrap, Framer Motion and Tailwind CSS</p>
+        
         <div className="Skills-skills">
           <div className="Skills-list">
             <h2>Front-end dev</h2>

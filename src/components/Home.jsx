@@ -1,5 +1,5 @@
 import React from 'react'
-import suda from '../components/assets/DSC_98282.jpg'
+import suda from '../components/assets/sudarshan.png'
 
 const Home = () => {
   return (

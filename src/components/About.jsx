@@ -5,8 +5,9 @@ const About = () => {
     <>
       <div className="About" id='About'>
         <h1>About Me</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum beatae itaque facere maiores velit, culpa amet architecto labore et molestiae adipisci totam debitis facilis accusamus magni? Magnam labore fuga optio dolor alias sed.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nulla laboriosam impedit delectus temporibus corporis blanditiis enim mollitia alias maiores?</p>
+         <p>
+         Front-end developer with 2 years of expertise in HTML, CSS, JavaScript, and React.js, creating captivating digital experiences. Passionate about anime, exploring diverse narratives and animation styles. Avid gamer with an analytical mindset, appreciating the intricacies of game design. My unique blend of technical proficiency and creative interests defines my approach to front-end development.
+         </p>
          <button>Download CV</button>
       </div>
     </>

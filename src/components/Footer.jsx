@@ -7,8 +7,8 @@ const Footer = () => {
        <footer>
         <div className="Footer-content">
           <h2>Have any projects in mind ?</h2>
-          <a target='_blank' href="mailto:sudarshanreddyca@gmail.com" className='Footer-button'>Hire Me</a>
-        </div>
+          <a target='_blank' href="https://www.upwork.com/freelancers/~018a90cb48c9427369" className='Footer-button'>Hire Me</a>
+          </div>     
           <div className="icons">
       
       <div><a target='_blank' href="https://www.instagram.com/sudarshan7_?igsh=YzAwZjE1ZTI0Zg==">
