@@ -138,13 +138,13 @@ header {
   margin: 0 auto 15px auto;
 }
 
-.About button {
-  display: inline-block;
-  outline: none;
+.About a {
+
   cursor: pointer;
   font-weight: 500;
   border-radius: 3px;
-  padding: 0 15px;
+  padding: 5px 15px;
+  margin: 5px;
   border-radius: 4px;
   color: #fd0;
   background: transparent;
@@ -154,7 +154,6 @@ header {
   word-spacing: 0px;
   letter-spacing: .0892857143em;
   text-decoration: none;
-  text-transform: uppercase;
   min-width: 64px;
   border: 1px solid #fd0;
   text-align: center;
