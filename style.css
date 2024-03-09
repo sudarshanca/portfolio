@@ -455,6 +455,37 @@ textarea {
   font-size: 10px;
 }
 
+/* Add this at the end of your CSS file */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Adjust other styles as needed */
+
+/* CSS animation for fade-in effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px); /* Optional: You can add a translate animation */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Optional: You can add a translate animation */
+  }
+}
+
+/* Apply the animation to elements */
+.animate-on-scroll {
+  opacity: 0; /* Start with opacity 0 so elements are hidden initially */
+}
+
+.animate-on-scroll.visible {
+  animation: fadeIn 1s ease forwards;
+}
+
 
 @media (max-width: 700px) {
   .br{
