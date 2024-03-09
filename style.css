@@ -521,4 +521,16 @@ textarea {
   .contact{
     flex-direction: column-reverse;
   }
+
+
+
+  .contact-social{
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 2rem;
+  }
+
+  .social-links{
+    margin-top: 1.5rem;
+  }
 }
