@@ -19,10 +19,10 @@
         <span></span>
       </div>
       <div class="links">
-        <a href="#" style="transition: all 1.5s ease-in-out;">Home</a>
-        <a href="#" style="transition: all 1.3s ease-in-out;">Service</a>
-        <a href="#" style="transition: all 1s ease-in-out;">Skills</a>
-        <a href="#" style="transition: all .7s ease-in-out;">Experience</a>
+        <a href="#home" style="transition: all 1.5s ease-in-out;">Home</a>
+        <a href="#service" style="transition: all 1.3s ease-in-out;">Service</a>
+        <a href="#skills" style="transition: all 1s ease-in-out;">Skills</a>
+        <a href="#experience" style="transition: all .7s ease-in-out;">Experience</a>
         <a href="#" style="transition: all .5s ease-in-out;">Contact</a>
       </div>
     </div>
@@ -30,7 +30,7 @@
   </header>
 
 
-  <div class="first-section">
+  <div class="first-section" id="home">
     <div class="top">
       <div class="left">
         <h1><span>i'm</span> Sudarshan Reddy CA</h1>
@@ -42,16 +42,24 @@
     </div>
     <div class="bottom">
       <div class="social-links">
-        <a href="#"><img src="./assets/linkedin.svg" alt=""></a>
-        <a href="#"><img src="./assets/github.svg" alt=""></a>
-        <a href="#"><img src="./assets/upwork.svg" alt=""></a>
-        <a href="#"><img src="./assets/fiverr.svg" alt=""></i></a>
+        <div class="socila"> <a href="#"><img src="./assets/linkedin.svg" alt="">
+            <p>Linkedin</p>
+          </a></div>
+        <div class="socila"> <a href="#"><img src="./assets/github.svg" alt="">
+            <p>Github</p>
+          </a></div>
+        <div class="socila"> <a href="#"><img src="./assets/upwork.svg" alt="">
+            <p>Upwork</p>
+          </a> </div>
+        <div class="socila"> <a href="#"><img src="./assets/fiverr.svg" alt="">
+            <p>fiverr</p>
+          </a> </div>
       </div>
       <div class="email"><a href="">sudarshanca77@gmail.com</a></div>
     </div>
   </div>
 
-  <div class="second-section">
+  <div class="second-section" id="service">
     <h1>What I do ?</h1>
     <div class="what-i-do">
       <div class="box">
@@ -80,7 +88,7 @@
     </div>
   </div>
 
-  <div class="third-section">
+  <div class="third-section" id="skills">
     <h1 class="ski">
       Skills
     </h1>
@@ -110,7 +118,7 @@
         <p>Reactjs</p>
       </div>
     </div>
-   
+
     <hr>
 
     <div class="skills">
@@ -129,20 +137,84 @@
     </div>
   </div>
 
-  <div class="fourth-section">
+  <div class="fourth-section" id="experience">
     <h1>Experience</h1>
     <div class="experience">
-       <h2>Front end developer</h2>
-       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellendus fugit adipisci omnis iure dignissimos quasi error suscipit impedit ratione distinctio recusandae id, obcaecati voluptatem maxime quas nobis eos doloribus vel? Debitis unde inventore cumque totam. Inventore eum debitis dolore earum molestias, pariatur excepturi nemo, sequi eius, ratione incidunt labore.</p>
+      <h2>Front end developer</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellendus fugit adipisci omnis iure
+        dignissimos quasi error suscipit impedit ratione distinctio recusandae id, obcaecati voluptatem maxime quas
+        nobis eos doloribus vel? Debitis unde inventore cumque totam. Inventore eum debitis dolore earum molestias,
+        pariatur excepturi nemo, sequi eius, ratione incidunt labore.</p>
     </div>
     <hr>
     <div class="experience">
-       <h2>web designer</h2>
-       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellendus fugit adipisci omnis iure dignissimos quasi error suscipit impedit ratione distinctio recusandae id, obcaecati voluptatem maxime quas nobis eos doloribus vel? Debitis unde inventore cumque totam. Inventore eum debitis dolore earum molestias, pariatur excepturi nemo, sequi eius, ratione incidunt labore.</p>
+      <h2>web designer</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellendus fugit adipisci omnis iure
+        dignissimos quasi error suscipit impedit ratione distinctio recusandae id, obcaecati voluptatem maxime quas
+        nobis eos doloribus vel? Debitis unde inventore cumque totam. Inventore eum debitis dolore earum molestias,
+        pariatur excepturi nemo, sequi eius, ratione incidunt labore.</p>
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <div class="contact">
+    <div class="bottom-left">
+      <h1>Just say hi.</h1>
+      <p class="bottom-left-p">
+        i'm always open to discuss your project and talk about new things
+      </p>
+      <div class="contact-social">
+        <div class="mail">
+          <p>mail me at</p>
+          <a href="">sudarshanca77@gmail.com</a>
+        </div>
+        <div class="link">
+          <p>follow me</p>
+          <div class="follow-me">
+            <div class="follow"> <a href="#"><img src="./assets/linkedin.svg" alt=""></a></div>
+            <div class="follow"> <a href="#"><img src="./assets/github.svg" alt=""> </a></div>
+            <div class="follow"> <a href="#"><img src="./assets/upwork.svg" alt=""> </a> </div>
+            <div class="follow"> <a href="#"><img src="./assets/fiverr.svg" alt=""></a> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="top-right">
+
+      <form method="post" name="contactform">
+        <h1>Contact</h1>
+        <div class="hr"></div>
+        <div>
+          <input type="text" id="fullname" name="name" placeholder="Full Name" required autocomplete="name">
+        </div>
+        <div>
+          <input type="email" id="email" name="email" placeholder="Email" required autocomplete="email">
+        </div>
+        <div>
+          <textarea id="message" name="message" cols="20" rows="1" placeholder="Type your message.."
+            autocomplete="message"></textarea>
+        </div>
+        <!-- Success message -->
+        <div>
+          <p id="success-message" style="display: none; color: green">
+            Form submitted successfully!
+          </p>
+        </div>
+        <div id="loader" class="loader"></div>
+        <div>
+          <input type="submit" class="submit" />
+        </div>
+      </form>
+
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Copyright&#169; 2024, All rights reserved</p>
+  </div>
+
+  <script src="./script.js"></script>
+  <script src="./contactUs.js"></script>
 </body>
 
 </html>
