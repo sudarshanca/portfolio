@@ -9,6 +9,7 @@
   font-family: "Rubik", sans-serif;
 }
 
+
 body {
   margin-bottom: 5rem;
 }
@@ -155,7 +156,6 @@ header{
 
 .second-section {
   height: max-content;
-  min-height: 80vh;
   padding: 1rem 5%;
   margin: 3rem 0;
 
@@ -199,12 +199,12 @@ header{
    margin-bottom: .5rem;
 }
 
-.third-section{
+.third-section,
+.fourth-section{
   padding: 2rem 5%;
 }
 .ski {
-  margin: 0 0 5rem 0;
-  
+  margin: 0 0 5rem 0; 
 }
 
 
@@ -220,12 +220,52 @@ header{
   display: flex;
   align-items: center;
   gap: .5rem;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+.skill:hover{
+  scale: 1.1;
 }
 
 
 .skills img {
   width: 40px;
 }
+
+.fourth-section{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.fourth-section h1 {
+  margin: 3rem 0;
+  font-weight: 500;
+}
+
+.fourth-section hr {
+  width: 70%;
+}
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 70%;
+}
+
+.experience h2 {
+  font-weight: 400;
+}
+
+
+.experience p {
+  text-align: justify;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+
 
 
 
@@ -263,5 +303,10 @@ header{
    .top{
     flex-direction: column;
    }
-
+   .experience{
+    width: 100%;
+   }
+   .fourth-section hr {
+    width: 100%;
+  }
 }
