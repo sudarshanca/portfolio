@@ -126,6 +126,9 @@ header{
 .left h1 {
   font-weight: 500;
 }
+.br{
+  display: none;
+}
 .left h1 span {
   font-weight: 100;
 }
@@ -454,6 +457,9 @@ textarea {
 
 
 @media (max-width: 700px) {
+  .br{
+    display: block;
+  }
   .hanburger-menu{
     display: flex;
   }
