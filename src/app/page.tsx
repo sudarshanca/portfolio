@@ -1,11 +1,10 @@
-import Hero from "@/pages/Hero";
-
 
 export default function Home() {
   return (
     <div>
-    <Hero />
-  
+     <h1 className="text-gray-100">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quibusdam.
+     </h1>
     </div>
   );
 }
