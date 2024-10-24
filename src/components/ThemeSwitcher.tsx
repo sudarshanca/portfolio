@@ -1,14 +1,21 @@
-'use client'
+'use client';
 import React, { useEffect, useState } from "react";
 
 const ThemeSwitcher = () => {
-  const [isDark, setIsDark] = useState(false);
+  // Initialize state based on localStorage
+  const [isDark, setIsDark] = useState(() => {
+    if (typeof window !== "undefined") {
+      return localStorage.getItem("theme") === "dark";
+    }
+    return false; // Default to light mode if there's no stored theme
+  });
 
   const toggleTheme = () => {
-    setIsDark(!isDark);
+    setIsDark((prev) => !prev);
   };
 
   useEffect(() => {
+    // Add or remove the "dark" class from the document root based on isDark
     if (isDark) {
       document.documentElement.classList.add("dark");
       localStorage.setItem("theme", "dark");
@@ -17,13 +24,6 @@ const ThemeSwitcher = () => {
       localStorage.setItem("theme", "light");
     }
   }, [isDark]);
-
-  useEffect(() => {
-    const storedTheme = localStorage.getItem("theme");
-    if (storedTheme === "dark") {
-      setIsDark(true);
-    }
-  }, []);
 
   return (
     <button
