@@ -77,13 +77,13 @@ const Header = () => {
       <div
         className={`${
           isMenuOpen ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
-        } fixed inset-0 z-50 bg-gray-900/10 opacity-100 backdrop-blur-sm transition duration-500`}
+        } fixed inset-0 z-50 bg-gray-900/10 opacity-100 backdrop-blur-sm transition duration-300`}
       ></div>
 
       <div
         className={`${
           isMenuOpen ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
-        } fixed top-0 right-0 z-50 max-w-xs w-full h-full bg-gray shadow-md transform transition duration-500 ease-in-out md:hidden`}
+        } fixed top-0 right-0 z-50 max-w-xs w-full h-full bg-gray shadow-md transform transition duration-300 ease-in-out md:hidden`}
       >
         <div className="p-4 flex items-center justify-between border-b border-gray-100">
           <h3 className="text-gray-600">logo</h3>
