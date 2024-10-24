@@ -4,6 +4,7 @@ const Hero = () => {
   return (
     <div className='text-gray-950'>
       Hero
+      
     </div>
   )
 }
