@@ -1,13 +1,15 @@
-'use client'
+"use client";
 import React, { useEffect, useState } from "react";
 
 const ThemeSwitcher = () => {
   const [isDark, setIsDark] = useState(false);
 
+  // Function to toggle theme
   const toggleTheme = () => {
-    setIsDark(!isDark);
+    setIsDark((prev) => !prev);
   };
 
+  // Effect to apply theme based on isDark state
   useEffect(() => {
     if (isDark) {
       document.documentElement.classList.add("dark");
@@ -18,10 +20,15 @@ const ThemeSwitcher = () => {
     }
   }, [isDark]);
 
+  // Effect to check stored theme or system preference
   useEffect(() => {
     const storedTheme = localStorage.getItem("theme");
-    if (storedTheme === "dark") {
-      setIsDark(true);
+    
+    if (storedTheme) {
+      setIsDark(storedTheme === "dark");
+    } else {
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      setIsDark(prefersDark);
     }
   }, []);
 
