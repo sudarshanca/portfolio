@@ -11,7 +11,7 @@ const Header = () => {
   };
 
   return (
-    <div>
+      <header className='fixed top-0 z-30 w-full border-b border-transparent bg-gray overflow-y-visible bg-gray/50 backdrop-blur-xl md:border-gray-100'>
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between p-4 md:px-8">
         <h3 className="text-gray-900">logo</h3>
         {/* Hamburger Icon for Mobile */}
@@ -147,7 +147,7 @@ const Header = () => {
           />
         </div>
       </div>
-    </div>
+    </header>
   );
 };
 
