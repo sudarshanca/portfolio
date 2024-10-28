@@ -33,7 +33,6 @@ const SkillsSection: React.FC = () => {
         <div className="grid grid-cols-3 gap-y-4 md:grid-cols-6 md:gap-y-8 lg:grid-cols-8 lg:gap-y-12">
           {SKILLS.map((skill) => (
             <div key={skill.name} className="flex flex-col items-center gap-2">
-              <a target="_blank" rel="noopener noreferrer" href={skill.link}>
                 <img
                   alt={skill.name}
                   loading="lazy"
@@ -43,7 +42,6 @@ const SkillsSection: React.FC = () => {
                   style={{aspectRatio:'1'}}
                   src={skill.src}
                 />
-              </a>
               <p className="text-normal text-base md:text-lg text-gray-600">{skill.name}</p>
             </div>
           ))}

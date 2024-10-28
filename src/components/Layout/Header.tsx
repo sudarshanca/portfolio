@@ -17,7 +17,7 @@ const Header = () => {
         {/* Hamburger Icon for Mobile */}
 
         <div className="md:hidden flex items-center gap-2">
-        <ThemeSwitcher />
+
         <button
           className="relative justify-center items-center hover:bg-gray-100 active:bg-gray-200 rounded-lg p-1.5 transition-colors duration-200 [&_svg]:stroke-gray-600 [&_svg]:hover:stroke-gray-700 [&_svg]:w-6 [&_svg]:h-6 flex"
           onClick={toggleMenu}
@@ -55,12 +55,12 @@ const Header = () => {
             >
               Work
             </a>
-            <a
+           {/*  <a
               href="#Testimonials"
               className="text-base font-medium text-gray-600 transition-all hover:text-gray-900 active:text-gray-600"
             >
               Testimonials
-            </a>
+            </a> */}
             <a
               href="#Contact"
               className="text-base font-medium text-gray-600 transition-all hover:text-gray-900 active:text-gray-600"
@@ -128,12 +128,12 @@ const Header = () => {
           >
             Work
           </a>
-          <a
+         {/*  <a
             href="#Testimonials"
             className="text-base font-medium text-gray-600 transition-all hover:text-gray-900 mb-4"
           >
             Testimonials
-          </a>
+          </a> */}
           <a
             href="#Contact"
             className="text-base font-medium text-gray-600 transition-all hover:text-gray-900 mb-4"

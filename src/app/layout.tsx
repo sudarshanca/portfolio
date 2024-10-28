@@ -26,10 +26,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* Place the preload link inside the head */}
+        <link rel="preload" href="/Screensho1.png" as="image" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} bg-gray antialiased`}
       >
-      <Header />
+        <Header />
         {children}
       </body>
     </html>

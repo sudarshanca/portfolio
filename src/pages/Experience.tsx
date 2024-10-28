@@ -19,6 +19,7 @@ const Experience = () => {
         {/* Experience Cards */}
         <div className="rounded-xl bg-gray shadow-md dark:bg-gray-100 dark:shadow-xl mx-auto flex w-full max-w-4xl flex-col justify-between gap-4 p-8 md:flex-row md:gap-8">
           <div className="max-md:order-1 md:w-1/4 [&_svg]:stroke-gray-950 [&_svg]:fill-gray-950">
+          <a href="https://www.upwork.com/freelancers/~01e20966d05eae2b0b?mp_source=share" target="_blank" style={{textDecoration: 'none'}}>
           <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 102 28"
@@ -47,7 +48,7 @@ const Experience = () => {
                 fill="var(--nav-logo)"
                 d="M91.47,14.13h.84l5.09,7.69h4.11l-5.85-8.53a7.66,7.66,0,0,0,4.74-7.11H96.77c0,3.37-2.66,4.65-5.3,4.65V0H87.82V21.82h3.64Z"
               ></path>
-              </svg>
+              </svg></a>
           </div>
           <div className="flex flex-col gap-4 max-md:order-3 md:w-2/4">
             <p className="text-lg md:text-xl font-semibold text-gray-900">
@@ -55,20 +56,20 @@ const Experience = () => {
             </p>
             <ul className="flex list-disc flex-col gap-2 md:gap-1 text-gray-600">
               <li className="text-normal text-base">
-                Worked for various clients like Fiskil, Shosho, Crowe MacKay LLP.
+                Worked for various clients
               </li>
               <li className="text-normal text-base">
-                Worked with a variety of technologies, including React, Next.js, Typescript, Express.js, PostgreSQL, Tailwindcss, Mui, Firebase, Storybook, Cypress, and others.
+                Worked with a variety of technologies, including React, Next.js, Typescript, Express.js, Redux, BootStrap, TailwindCss and others.
               </li>
             </ul>
           </div>
           <div className="max-md:order-2 md:w-1/4">
-            <p className="text-base text-gray-700 md:text-right">Nov 2021 - Present</p>
+            <p className="text-base text-gray-700 md:text-right">Jan 2024 - Present</p>
           </div>
         </div>
 
 
-        <div className="rounded-xl bg-gray shadow-md dark:bg-gray-100 dark:shadow-xl mx-auto flex w-full max-w-4xl flex-col justify-between gap-4 p-8 md:flex-row md:gap-8">
+      {/*   <div className="rounded-xl bg-gray shadow-md dark:bg-gray-100 dark:shadow-xl mx-auto flex w-full max-w-4xl flex-col justify-between gap-4 p-8 md:flex-row md:gap-8">
           <div className="max-md:order-1 md:w-1/4">
           <div className="max-md:order-1 md:w-1/4 [&_svg]:stroke-gray-950 [&_svg]:fill-gray-950">
           <svg
@@ -102,6 +103,7 @@ const Experience = () => {
               </svg>
           </div>
           </div>
+
           <div className="flex flex-col gap-4 max-md:order-3 md:w-2/4">
             <p className="text-lg md:text-xl font-semibold text-gray-900">
               Full Stack Developer
@@ -113,7 +115,7 @@ const Experience = () => {
           <div className="max-md:order-2 md:w-1/4">
             <p className="text-base text-gray-700 md:text-right">Dec 2015 - May 2017</p>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
