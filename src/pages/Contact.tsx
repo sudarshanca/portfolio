@@ -7,14 +7,18 @@ const Contact = () => {
   const phone = "+91 7090607571";
   const [copiedText, setCopiedText] = useState("");
 
-  const copyToClipboard = (text: any, id: string) => {
-    navigator.clipboard.writeText(text).then(() => {
-      setCopiedText(id);
-      setTimeout(() => setCopiedText(""), 3000); // Clear the copied text after 3 seconds
-    }).catch((error) => {
-      console.error("Error copying text: ", error);
-    });
+  const copyToClipboard = (text: string, id: string) => {
+    navigator.clipboard
+      .writeText(text)
+      .then(() => {
+        setCopiedText(id);
+        setTimeout(() => setCopiedText(""), 3000); // Clear the copied text after 3 seconds
+      })
+      .catch((error) => {
+        console.error("Error copying text: ", error);
+      });
   };
+  
 
   return (
     <section className="w-full bg-gray py-16 md:py-20 2xl:py-24" id="Contact">
