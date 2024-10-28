@@ -9,11 +9,17 @@ const Header = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+  const Logo = () => (
+    <h1  className="font-bold text-gray-900 text-2xl">
+      {/* You can replace the placeholder text here with an actual logo if needed */}
+      {"<SR />"}
+    </h1>
+  );
 
   return (
       <header className='fixed top-0 z-30 w-full border-b border-transparent bg-gray overflow-y-visible bg-gray/50 backdrop-blur-xl md:border-gray-100'>
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between p-4 md:px-8">
-        <h3 className="text-gray-900">logo</h3>
+   <Logo />
         {/* Hamburger Icon for Mobile */}
 
         <div className="md:hidden flex items-center gap-2">
@@ -91,7 +97,7 @@ const Header = () => {
         } fixed top-0 right-0 z-50 max-w-xs w-full h-dvh bg-gray shadow-md transform transition duration-300 ease-in-out md:hidden`}
       >
         <div className="p-4 flex items-center justify-between border-b border-gray-100">
-          <h3 className="text-gray-600">logo</h3>
+        <Logo />
           
           <button
             onClick={toggleMenu}
