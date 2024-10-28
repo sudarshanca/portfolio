@@ -15,10 +15,13 @@ const Header = () => {
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between p-4 md:px-8">
         <h3 className="text-gray-900">logo</h3>
         {/* Hamburger Icon for Mobile */}
+
+        <div className="md:hidden flex items-center gap-2">
+        <ThemeSwitcher />
         <button
-          className="relative justify-center items-center hover:bg-gray-100 active:bg-gray-200 rounded-lg p-1.5 transition-colors duration-200 [&_svg]:stroke-gray-600 [&_svg]:hover:stroke-gray-700 [&_svg]:w-6 [&_svg]:h-6 flex md:hidden"
+          className="relative justify-center items-center hover:bg-gray-100 active:bg-gray-200 rounded-lg p-1.5 transition-colors duration-200 [&_svg]:stroke-gray-600 [&_svg]:hover:stroke-gray-700 [&_svg]:w-6 [&_svg]:h-6 flex"
           onClick={toggleMenu}
-        >
+          >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -30,35 +33,36 @@ const Header = () => {
             strokeLinecap="round"
             strokeLinejoin="round"
             className="lucide lucide-menu"
-          >
+            >
             <line x1="4" x2="20" y1="12" y2="12"></line>
             <line x1="4" x2="20" y1="6" y2="6"></line>
             <line x1="4" x2="20" y1="18" y2="18"></line>
           </svg>
         </button>
+            </div>
 
         <div className="hidden md:flex items-center gap-6">
           <div className="flex text-gray-900 items-center gap-6">
             <a
-              href="#"
+              href="#About"
               className="text-base font-medium text-gray-600 transition-all hover:text-gray-900 active:text-gray-600"
             >
               About
             </a>
             <a
-              href="#"
+              href="#Work"
               className="text-base font-medium text-gray-600 transition-all hover:text-gray-900 active:text-gray-600"
             >
               Work
             </a>
             <a
-              href="#"
+              href="#Testimonials"
               className="text-base font-medium text-gray-600 transition-all hover:text-gray-900 active:text-gray-600"
             >
               Testimonials
             </a>
             <a
-              href="#"
+              href="#Contact"
               className="text-base font-medium text-gray-600 transition-all hover:text-gray-900 active:text-gray-600"
             >
               Contact
@@ -78,6 +82,7 @@ const Header = () => {
         className={`${
           isMenuOpen ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
         } fixed inset-0 z-50 bg-gray-900/10 opacity-100 backdrop-blur-sm transition duration-300 h-dvh`}
+        onClick={toggleMenu}
       ></div>
 
       <div
@@ -87,7 +92,7 @@ const Header = () => {
       >
         <div className="p-4 flex items-center justify-between border-b border-gray-100">
           <h3 className="text-gray-600">logo</h3>
-
+          
           <button
             onClick={toggleMenu}
             className="relative justify-center items-center hover:bg-gray-100 active:bg-gray-200 rounded-lg p-1.5 transition-colors duration-200 [&_svg]:stroke-gray-600 [&_svg]:hover:stroke-gray-700 [&_svg]:w-6 [&_svg]:h-6 flex md:hidden"
@@ -112,25 +117,25 @@ const Header = () => {
 
         <div className="flex flex-col p-4 border-b border-gray-100">
           <a
-            href="#"
+            href="#About"
             className="text-base font-medium text-gray-600 transition-all hover:text-gray-900 mb-4"
           >
             About
           </a>
           <a
-            href="#"
+            href="#Work"
             className="text-base font-medium text-gray-600 transition-all hover:text-gray-900 mb-4"
           >
             Work
           </a>
           <a
-            href="#"
+            href="#Testimonials"
             className="text-base font-medium text-gray-600 transition-all hover:text-gray-900 mb-4"
           >
             Testimonials
           </a>
           <a
-            href="#"
+            href="#Contact"
             className="text-base font-medium text-gray-600 transition-all hover:text-gray-900 mb-4"
           >
             Contact

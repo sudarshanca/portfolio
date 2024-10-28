@@ -1,27 +1,25 @@
-import Image from 'next/image';
+// import Image from 'next/image';
 
 export default function About() {
   return (
-    <section className="w-full py-16 md:py-20 2xl:py-24 bg-gray-50" id="about">
+    <section  className="w-full py-16 md:py-20 2xl:py-24 bg-gray-50" id="About">
       <div className="mx-auto flex w-full max-w-7xl flex-col gap-6 px-4 md:gap-12 md:px-8">
         <div className="self-center">
           <div className="flex items-center justify-center rounded-xl bg-gray-200 px-5 py-1">
-            <p className=" text-sm font-medium">About me</p>
+            <p className=" text-sm font-medium text-gray-700">About me</p>
           </div>
         </div>
         <div className="flex w-full flex-col justify-between gap-12 md:flex-row">
           {/* Image Section */}
           <div className="flex justify-center md:order-first md:justify-end">
             <div className="relative h-[380px] w-[320px] md:h-[460px] md:w-[380px] lg:h-[520px] lg:w-[440px]">
-              <Image
-                alt="Fullpose of Sagar"
+              <img
+                alt="Fullpose of Sudarshan"
                 width={1833}
-                height={2318}
-                decoding="async"
+                height={1318}
                 className="absolute z-10 h-[360px] w-[280px] border-8 border-gray-50 max-md:left-5 md:right-0 md:top-0 md:h-[420px] md:w-[340px] lg:h-[480px] lg:w-[400px]"
                 style={{ objectFit: 'cover' }}
                 src="/sudarshan.jpeg"
-                priority 
               />
               <div className="absolute h-[360px] w-[320px] border-8 border-transparent bg-gray-200 max-md:top-5 md:bottom-0 md:left-0 md:h-[420px] md:w-[340px] lg:h-[480px] lg:w-[400px]" />
             </div>
@@ -34,13 +32,7 @@ export default function About() {
             </h3>
             <p className=" text-base">
               I'm a passionate,{' '}
-              <a
-                target="_blank"
-                className="underline underline-offset-4 transition-all hover:text-gray-900 active:text-gray-600"
-                href="https://www.figma.com/@shahsagarm"
-              >
                 self-proclaimed designer
-              </a>{' '}
               who specializes in full stack development (React.js & Node.js). I
               am enthusiastic about bringing the technical and visual aspects of
               digital products to life. User experience, pixel perfect design,

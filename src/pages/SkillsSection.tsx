@@ -1,7 +1,6 @@
 // src/components/SkillsSection.tsx
-import Image from 'next/image';
+// import Image from 'next/image';
 import React from 'react';
-
 
 const SKILLS = [
   { name: 'Javascript', src: '/logo/icon-javascript.svg', link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' },
@@ -35,14 +34,14 @@ const SkillsSection: React.FC = () => {
           {SKILLS.map((skill) => (
             <div key={skill.name} className="flex flex-col items-center gap-2">
               <a target="_blank" rel="noopener noreferrer" href={skill.link}>
-                <Image
+                <img
                   alt={skill.name}
                   loading="lazy"
-                  width="64"
-                  height="64"
-                  className="transition-transform duration-300 md:hover:scale-110 w-full"
+                  width={64} 
+                  height={64}
+                  className="transition-transform duration-300 md:hover:scale-110"
+                  style={{aspectRatio:'1'}}
                   src={skill.src}
-                  style={{ color: 'transparent' }}
                 />
               </a>
               <p className="text-normal text-base md:text-lg text-gray-600">{skill.name}</p>
