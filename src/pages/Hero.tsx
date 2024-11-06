@@ -1,4 +1,5 @@
 // import Image from "next/image";
+import Image from "next/image";
 import React from "react";
 
 const Hero = () => {
@@ -9,7 +10,7 @@ const Hero = () => {
           {/* Image Section */}
           <div className="flex items-center justify-center md:order-last md:flex-grow md:justify-end">
             <div className="relative h-[300px] w-[280px] md:h-[360px] md:w-[320px]">
-              <img
+              <Image
                 alt="Headshot of sudarshan"
                 src="/sudarshan.jpeg"
                 width={1067}

@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import ThemeSwitcher from "../General/ThemeSwitcher";
 import CustomButton from "../General/CustomButton";
+import Link from "next/link";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,6 +16,19 @@ const Header = () => {
       {"<SR />"}
     </h1>
   );
+
+  const handleDownloadCV = () => {
+    const url = '/Sudarshan-CV.pdf'; // Path to your CV file in the public folder
+    const newTab = window.open(url, '_blank'); // Open in new tab
+    if (newTab) {
+      newTab.focus();
+      // Trigger download
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = 'Sudarshan-CV.pdf';
+      link.click();
+    }
+  };
 
   return (
       <header className='fixed top-0 z-30 w-full border-b border-transparent bg-gray overflow-y-visible bg-gray/50 backdrop-blur-xl md:border-gray-100'>
@@ -49,37 +63,38 @@ const Header = () => {
 
         <div className="hidden md:flex items-center gap-6">
           <div className="flex text-gray-900 items-center gap-6">
-            <a
+            <Link
               href="#About"
               className="text-base font-medium text-gray-600 transition-all hover:text-gray-900 active:text-gray-600"
             >
               About
-            </a>
-            <a
+            </Link>
+            <Link
               href="#Work"
               className="text-base font-medium text-gray-600 transition-all hover:text-gray-900 active:text-gray-600"
             >
               Work
-            </a>
-           {/*  <a
+            </Link>
+           {/*  <Link
               href="#Testimonials"
               className="text-base font-medium text-gray-600 transition-all hover:text-gray-900 active:text-gray-600"
             >
               Testimonials
-            </a> */}
-            <a
+            </Link> */}
+            <Link
               href="#Contact"
               className="text-base font-medium text-gray-600 transition-all hover:text-gray-900 active:text-gray-600"
             >
               Contact
-            </a>
+            </Link>
           </div>
           <div className="h-6 w-0.5 bg-gray-100"></div>
           <ThemeSwitcher />
           <CustomButton
             title="Download Cv"
-            ContainerStyles=" bg-gray-900 px-4 py-1.5 font-medium text-gray-50 transition-colors duration-200 hover:bg-gray-700 active:bg-gray-800"
-          />
+            ContainerStyles="mt-4 bg-gray-900 px-4 py-1.5 font-medium text-gray-50 transition-colors duration-200 hover:bg-gray-700 active:bg-gray-800"
+            Handelclick={handleDownloadCV}
+         />
         </div>
       </div>
 
@@ -122,30 +137,33 @@ const Header = () => {
         </div>
 
         <div className="flex flex-col p-4 border-b border-gray-100">
-          <a
+          <Link
+           onClick={toggleMenu}
             href="#About"
             className="text-base font-medium text-gray-600 transition-all hover:text-gray-900 mb-4"
           >
             About
-          </a>
-          <a
+          </Link>
+          <Link
+           onClick={toggleMenu}
             href="#Work"
             className="text-base font-medium text-gray-600 transition-all hover:text-gray-900 mb-4"
           >
             Work
-          </a>
-         {/*  <a
+          </Link>
+         {/*  <Link
             href="#Testimonials"
             className="text-base font-medium text-gray-600 transition-all hover:text-gray-900 mb-4"
           >
             Testimonials
-          </a> */}
-          <a
+          </Link> */}
+          <Link
+           onClick={toggleMenu}
             href="#Contact"
             className="text-base font-medium text-gray-600 transition-all hover:text-gray-900 mb-4"
           >
             Contact
-          </a>
+          </Link>
         </div>
         <div className="flex flex-col gap-4 p-4">
           <div className="flex w-full justify-between items-center">
@@ -155,7 +173,8 @@ const Header = () => {
           <CustomButton
             title="Download Cv"
             ContainerStyles="mt-4 bg-gray-900 px-4 py-1.5 font-medium text-gray-50 transition-colors duration-200 hover:bg-gray-700 active:bg-gray-800"
-          />
+            Handelclick={handleDownloadCV}
+         />
         </div>
       </div>
     </header>
