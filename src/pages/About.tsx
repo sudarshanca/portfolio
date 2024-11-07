@@ -1,5 +1,4 @@
 // import Image from 'next/image';
-
 import Image from "next/image";
 
 export default function About() {
@@ -33,65 +32,53 @@ export default function About() {
               Curious about me? Here you have it:
             </h3>
             <p className=" text-base">
-              I'm a passionate,{' '}
-                self-proclaimed designer
-              who specializes in full stack development (React.js & Node.js). I
-              am enthusiastic about bringing the technical and visual aspects of
-              digital products to life. User experience, pixel perfect design,
-              and writing clear, readable, highly performant code matters to
-              me.
+              I'm a passionate full-stack developer with a focus on Node.js and React.js. I enjoy building modern web applications with a strong emphasis on back-end development. With a year of hands-on experience in Node.js, I have developed a deep understanding of server-side JavaScript, RESTful APIs, and integrating databases such as MongoDB and PostgreSQL.
             </p>
             <p className=" text-base">
-              I began my journey as a web developer in 2015, and since then,
-              I've continued to grow and evolve as a developer, taking on new
-              challenges and learning the latest technologies along the way.
-              Now, in my early thirties, 7 years after starting my web
-              development journey, I'm building cutting-edge web applications
-              using modern technologies such as Next.js, TypeScript, Nestjs,
-              Tailwindcss, Supabase and much more.
+              My journey in web development started a year ago, and I’ve quickly immersed myself in learning both front-end and back-end technologies. I focus on writing clean, maintainable code while ensuring the user experience is seamless and intuitive.
             </p>
             <p className=" text-base">
-              I am very much a progressive thinker and enjoy working on products
-              end to end, from ideation all the way to development.
+              In my work, I utilize modern tools such as Express.js, Next.js, and Tailwind CSS, and I am always eager to explore new technologies to further enhance my skill set. Whether it's handling API development, optimizing databases, or managing application deployment, I am fully engaged in delivering complete solutions.
             </p>
-            
             <p className=" text-base">
-              One last thing, I'm available for freelance work, so feel free to
-              reach out and say hello! I promise I don't bite 😉
+              I am always eager to take on new challenges and work on projects that push me to expand my skill set and knowledge. I'm currently focused on developing scalable, high-performance applications while continually improving my expertise in JavaScript-based technologies.
+            </p>
+            <p className=" text-base">
+              One last thing, I'm available for freelance work, so feel free to reach out and say hello! I promise I don't bite 😉
             </p>
             <br />
               
             {/* Social Links */}
             <div className="flex gap-1">
-            <a href="https://github.com/sudarshanca" target="_blank" style={{textDecoration: 'none'}}>
-              <button className="flex justify-center items-center hover:bg-gray-100 active:bg-gray-200 rounded-lg p-1.5 transition-colors duration-200 [&_svg]:stroke-gray-600">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6">
-                  <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 10c0 3.5 3 5.5 6 5.5a4.8 4.8 0 0 0-1 3.5v4"></path>
-                </svg>
-              </button>
+              <a href="https://github.com/sudarshanca" target="_blank" style={{textDecoration: 'none'}}>
+                <button className="flex justify-center items-center hover:bg-gray-100 active:bg-gray-200 rounded-lg p-1.5 transition-colors duration-200 [&_svg]:stroke-gray-600">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6">
+                    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 10c0 3.5 3 5.5 6 5.5a4.8 4.8 0 0 0-1 3.5v4"></path>
+                  </svg>
+                </button>
               </a>
-            <a href="https://www.figma.com/@sudarshanreddyc" target="_blank" style={{textDecoration: 'none'}}>
-              <button className="relative flex justify-center items-center hover:bg-gray-100 active:bg-gray-200 rounded-lg p-1.5 transition-colors duration-200">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="stroke-gray-600"
-                >
-                  <path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"></path>
-                  <path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"></path>
-                  <path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z"></path>
-                  <path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z"></path>
-                  <path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"></path>
-                </svg>
-              </button>
-                  </a>
+              <a href="https://www.figma.com/@sudarshanreddyc" target="_blank" style={{textDecoration: 'none'}}>
+                <button className="relative flex justify-center items-center hover:bg-gray-100 active:bg-gray-200 rounded-lg p-1.5 transition-colors duration-200">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="stroke-gray-600"
+                  >
+                    <path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"></path>
+                    <path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"></path>
+                    <path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z"></path>
+                    <path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z"></path>
+                    <path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"></path>
+                  </svg>
+                </button>
+              </a>
             </div>
           </div>
           
