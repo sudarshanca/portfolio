@@ -12,18 +12,18 @@ const Work = () => {
       technologies: ["HTML", "CSS", "JavaScript", "Bootstrap", "Figma"]
     },    
     {
-      name: "SVE Castings Pvt. Ltd.",
-      link: "https://sve-sudarshan-reddy-cas-projects.vercel.app/",
-      image: "/SVE.png",
-      description: "A comprehensive portfolio for SVE Castings, showcasing its capabilities in pressure die casting and more.",
-      technologies: ["React.js", "Vite", "Bootstrap", "Vercel Deployment"],
-    },
-    {
       name: "Queue1",
       link: "https://queue1.net/LandingPage/",
       image: "/Queue1.png",
       description: "Queue1 simplifies inventory-management software deployment with end-to-end implementation, customization, integration support, and professional consulting through the Queue1 Launchpad program",
       technologies: ["HTML", "CSS", "Bootstrap", "JavaScript"],
+    },
+    {
+      name: "SVE Castings Pvt. Ltd.",
+      link: "https://sve-sudarshan-reddy-cas-projects.vercel.app/",
+      image: "/SVE.png",
+      description: "A comprehensive portfolio for SVE Castings, showcasing its capabilities in pressure die casting and more.",
+      technologies: ["React.js", "Vite", "Bootstrap", "Vercel Deployment"],
     },
   ];
 
